@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Event Registration</title>
+</head>
+<body>
+<h1>Register for Our Online Event</h1>
+<form action="/register" method="post">
+<label for="fullname">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="yourname@example.com" required><br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label><br><br>
+
+<label for="age-group">Age Group:</label><br>
+<select id="age-group" name="age-group" required>
+  <option value="">--Select Age Group--</option>
+  <option value="18-25">18–25</option>
+  <option value="26-35">26–35</option>
+  <option value="36-45">36–45</option>
+  <option value="46+">46+</option>
+</select><br><br>
+
+<label>Topics of Interest:</label><br>
+<input type="checkbox" id="tech" name="topics" value="Technology">
+<label for="tech">Technology</label><br>
+<input type="checkbox" id="art" name="topics" value="Art">
+<label for="art">Art</label><br>
+<input type="checkbox" id="science" name="topics" value="Science">
+<label for="science">Science</label><br>
+<input type="checkbox" id="music" name="topics" value="Music">
+<label for="music">Music</label><br><br>
+
+<label for="comments">Additional Comments:</label><br>
+<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your thoughts or questions..."></textarea><br><br>
+
+<button type="submit">Register</button>
+</form>
+</body>
+</html>

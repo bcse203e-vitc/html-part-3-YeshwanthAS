@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+</head>
+<body>
+  <h1>Book Your Trip</h1>
+  <form action="/book-travel" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="contact">Contact Information:</label><br>
+    <input type="tel" id="contact" name="contact" placeholder="Phone or Email" required><br><br>
+
+    <label for="destination">Destination:</label><br>
+    <select id="destination" name="destination" required>
+      <option value="">--Select Destination--</option>
+      <option value="paris">Paris</option>
+      <option value="newyork">New York</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="sydney">Sydney</option>
+    </select><br><br>
+
+    <label for="travel-date">Travel Date:</label><br>
+    <input type="date" id="travel-date" name="travel-date" required><br><br>
+
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+
+    <label>Travel Class:</label><br>
+    <input type="radio" id="economy" name="travel-class" value="Economy">
+    <label for="economy">Economy</label><br>
+    <input type="radio" id="business" name="travel-class" value="Business">
+    <label for="business">Business</label><br>
+    <input type="radio" id="first" name="travel-class" value="First Class">
+    <label for="first">First Class</label><br><br>
+
+    <input type="checkbox" id="insurance" name="insurance" value="Yes">
+    <label for="insurance">Add Travel Insurance</label><br><br>
+
+    <label for="total-cost">Estimated Total Cost:</label><br>
+    <input type="text" id="total-cost" name="total-cost" readonly placeholder="Calculated after submission"><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
